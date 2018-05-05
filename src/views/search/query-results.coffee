@@ -77,6 +77,8 @@ class SearchResultsView extends Marionette.View
         localCollection: new Backbone.Collection
         entryUrlRoot: @getOption 'entryUrlRoot'
         template: @getOption 'entryTemplate'
+        templateContext:
+          imgClass: @getOption 'entryImgClass'
     @showChildView 'itemList', view
 
 module.exports = SearchResultsView

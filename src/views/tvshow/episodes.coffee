@@ -10,9 +10,9 @@ BootstrapFormView = require('tbirds/views/bsformview').default
 { navigate_to_url } = require 'tbirds/util/navigate-to-url'
 { form_group_input_div } = require 'tbirds/templates/forms'
 
-noImage = require('tbirds/templates/no-image-span').default
 PointerOnHover = require('tbirds/behaviors/pointer-on-hover').default
 
+{noImage} = require '../templates'
 
 MessageChannel = Backbone.Radio.channel 'messages'
 AppChannel = Backbone.Radio.channel 'moviedb'
@@ -41,7 +41,8 @@ class EpisodeView extends Marionette.View
       tc.div '.col-lg-3', ->
         if model.still_path
           tc.img src:"#{baseImageUrl}w200#{model.still_path}"
-        else noImage '4x'
+        else
+          tc.img '.bg-light.rounded', src:noImage, style:'width:50%;height:auto'
       tc.div '.col-lg-8.ml-1', ->
         tc.span model.overview
 

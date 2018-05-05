@@ -32,6 +32,8 @@ class InfoView extends Marionette.View
       date = new Date(model.air_date).toDateString()
       tc.span "Season started #{date}"
     tc.div '.jview'
+  templateContext:
+    imgClass: '.mr-3.bg-light'
   ui:
     jsonView: '.jview'
   onDomRefresh: ->
