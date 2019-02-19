@@ -1,5 +1,6 @@
 import Backbone from 'backbone'
 import Marionette from 'backbone.marionette'
+import AppRouter from 'marionette.approuter'
 import TkApplet from 'tbirds/tkapplet'
 import capitalize from 'tbirds/util/capitalize'
 
@@ -25,7 +26,7 @@ appletMenu = [
   }
   ]
 
-class Router extends Marionette.AppRouter
+class Router extends AppRouter
   appRoutes:
     'moviedb': 'viewIndex'
     'moviedb/search/tv': 'viewIndex'
