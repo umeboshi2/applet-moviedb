@@ -16,7 +16,7 @@ MainChannel = Backbone.Radio.channel 'global'
 MessageChannel = Backbone.Radio.channel 'messages'
 AppChannel = Backbone.Radio.channel 'moviedb'
 
-mainText = require 'raw-loader!../index-doc.md'
+mainText = require('raw-loader!../index-doc.md').default
 tmdIcon = require './logo'
 
 require '../styles.scss'
