@@ -20,6 +20,7 @@ mainText = require('raw-loader!../index-doc.md').default
 tmdIcon = require './logo'
 
 require '../styles.scss'
+console.log "mainText", mainText
 
 { posterImage, tvShowDescription } = require './templates'
 showTemplateCard = tc.renderable (model) ->
