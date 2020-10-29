@@ -30,7 +30,7 @@
     "backbone.themoviedb": "github:umeboshi2/backbone.themoviedb",
     "bootstrap-star-rating": "^4.0.6",
     "json-view": "^0.4.0",
-    "tbirds": "^0.5.3",
+    "tbirds": "^0.6.7",
     "themoviedb-javascript-library": "^3.0.3"
   },
   "devDependencies": {
